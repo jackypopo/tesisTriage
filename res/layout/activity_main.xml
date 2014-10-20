@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+            <android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/drawer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+                
+                 <LinearLayout 
+        android:id="@+id/legend"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical">
+	    
+        <TableLayout
+                android:id="@+id/title"
+                android:layout_height="350dp"
+                android:layout_width="match_parent"
+                android:gravity="center">
+        </TableLayout>
+        
+         <TableLayout
+                android:id="@+id/tlautor0"
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="#AEAEAE">
+                
+                 <TableRow
+                    android:id="@+id/tlautor10"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left">
+                    
+                  <TextView
+                        android:layout_height="wrap_content"
+                        android:text="Prioridad del Paciente"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:id="@+id/legendText06"></TextView>
+                    
+             </TableRow>
+         </TableLayout>
+         
+          <TableLayout
+                android:id="@+id/tlautor"
+                android:layout_height="130dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:background="#ECECEC">
+             
+            
+             <TableRow
+                    android:id="@+id/tlautor04"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:focusable="true"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:id="@+id/legendIcon05"
+                        android:src="@drawable/gdot"
+                        android:layout_gravity="center"></ImageView>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="No Urgente"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:id="@+id/legendText05"></TextView>
+
+                    <EditText
+                        android:layout_height="20dp"
+                        android:text="03"
+                        android:gravity="center"
+                       
+                        android:enabled="false"
+                        android:layout_marginLeft="25dp"
+                        android:layout_width="50dp"
+                        android:textColor="#000000"
+                        android:background="#FFFFFF"
+                        android:id="@+id/legendText07"></EditText>
+                </TableRow>
+                
+              <TableRow
+                    android:id="@+id/tlautor05"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:focusable="true"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:id="@+id/legendIcon06"
+                        android:src="@drawable/ydot"
+                        android:layout_gravity="center"></ImageView>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="Semi Urgente"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:id="@+id/legendText08"></TextView>
+                    
+                    <EditText
+                        android:layout_height="20dp"
+                        android:text="03"
+                        android:gravity="center"
+                        
+                        android:enabled="false"
+                        android:layout_marginLeft="25dp"
+                        android:layout_width="50dp"
+                        android:textColor="#000000"
+                        android:background="#FFFFFF"
+                        android:id="@+id/legendText09"></EditText>
+                </TableRow>
+                
+              <TableRow
+                    android:id="@+id/tlautor06"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:focusable="true"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:id="@+id/legendIcon15"
+                        android:src="@drawable/rdot"
+                        android:layout_gravity="center"></ImageView>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="Urgente"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:id="@+id/legendText16"></TextView> 
+                    
+                    <EditText
+                        android:layout_height="20dp"
+                        android:text="03"
+                        android:gravity="center"
+
+                        android:enabled="false"
+                        android:layout_marginLeft="25dp"
+                        android:layout_width="50dp"
+                        android:textColor="#000000"
+                        android:background="#FFFFFF"
+                        android:id="@+id/legendText17"></EditText>
+                </TableRow>
+                
+              <TableRow
+                    android:id="@+id/tlautor07"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:focusable="true"
+                        android:layout_height="20dp"
+                        android:layout_width="20dp"
+                        android:id="@+id/legendIcon07"
+                        android:src="@drawable/bdot"
+                        android:layout_gravity="center"></ImageView>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="Fallecido"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_width="wrap_content"
+                        android:textColor="#000000"
+                        android:id="@+id/legendText10"></TextView>
+                    
+                    <EditText
+                        android:layout_height="20dp"
+                        android:text="03"
+                        android:gravity="center"
+                        android:enabled="false"
+                        android:layout_marginLeft="25dp"
+                        android:layout_width="50dp"
+                        android:textColor="#000000"
+                        android:background="#FFFFFF"
+                        android:id="@+id/legendText11"></EditText>
+                </TableRow>
+             
+                
+        </TableLayout>  
+         </LinearLayout>
+
+                <!-- The main content view -->
+                <FrameLayout
+                    android:id="@+id/content_frame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                </FrameLayout>
+
+                <!-- The navigation drawer -->
+                <LinearLayout
+                    android:id="@+id/drawer"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="#AEAEAE"
+                        android:textColor="#FFFFFF"
+                        android:gravity="center"
+                        android:text="MENÚ PRINCIPAL"
+                        android:textSize="20sp" />
+
+                    <ListView
+                        android:id="@+id/drawer_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FEFEFE"
+                        android:choiceMode="singleChoice"
+                        android:divider="@android:color/darker_gray"
+                        android:dividerHeight="0.1dp"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.DrawerLayout>
+            
+</LinearLayout>
+
+
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?> -->
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     android:orientation="vertical"> -->
+        
+<!-- <android.support.v4.widget.DrawerLayout  -->
+<!--     xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!--     android:id="@+id/drawer_layout" -->
+<!--     android:layout_width="match_parent" -->
+<!--     android:layout_height="match_parent" -->
+<!--     android:orientation="vertical" -->
+<!--     >   -->
+       
+<!--     <FrameLayout -->
+<!--         android:id="@+id/content_frame" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" />    -->
+<!--     <LinearLayout  -->
+<!--         android:id="@+id/drawer" -->
+<!--         android:background="#FF0000" -->
+<!--         android:layout_width="240dp" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:orientation="vertical"  -->
+<!--         android:layout_gravity="start" -->
+<!--      > -->
+		
+<!--         <TextView  -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="50dp" -->
+<!--             android:gravity="center" -->
+<!--             android:textSize="20sp" -->
+<!--             android:text="MENÚ PRINCIPAL" -->
+<!--             android:background="#AEAEAE" -->
+<!--             android:textColor="@android:color/white" /> -->
+        
+<!-- 	    <ListView android:id="@+id/drawer_list" -->
+<!-- 	        android:layout_width="match_parent" -->
+<!-- 	        android:layout_height="match_parent" -->
+<!-- 	        android:choiceMode="singleChoice" -->
+<!-- 	        android:divider="@android:color/darker_gray" -->
+<!-- 	        android:dividerHeight="0.1dp" -->
+<!-- 	        android:textColor="@android:color/white" -->
+<!-- 	        android:background="#FEFEFE" /> -->
+	     	    
+<!--     </LinearLayout> -->
+      
+<!-- </android.support.v4.widget.DrawerLayout>  -->
+
+<!-- <LinearLayout  -->
+<!--         android:id="@+id/legend" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="350dp" -->
+<!--         android:orientation="vertical"> -->
+	    
+<!--         <TableLayout -->
+<!--                 android:id="@+id/title" -->
+<!--                 android:layout_height="350dp" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:gravity="center"> -->
+<!--         </TableLayout> -->
+        
+<!--          <TableLayout -->
+<!--                 android:id="@+id/tlautor0" -->
+<!--                 android:layout_height="20dp" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:gravity="center" -->
+<!--                 android:background="#AEAEAE"> -->
+                
+<!--                  <TableRow -->
+<!--                     android:id="@+id/tlautor10" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="20dp" -->
+<!--                     android:layout_marginLeft="15dp" -->
+<!--                     android:gravity="left"> -->
+                    
+<!--                   <TextView -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:text="Prioridad del Paciente" -->
+<!--                         android:layout_marginLeft="5dp" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:textColor="#000000" -->
+<!--                         android:textSize="16sp" -->
+<!--                         android:textStyle="bold" -->
+<!--                         android:id="@+id/legendText06"></TextView> -->
+                    
+<!--              </TableRow> -->
+<!--          </TableLayout> -->
+        
+        
+<!--          <TableLayout -->
+<!--                 android:id="@+id/tlautor" -->
+<!--                 android:layout_height="130dp" -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:gravity="center" -->
+<!--                 android:background="#ECECEC"> -->
+             
+            
+<!--              <TableRow -->
+<!--                     android:id="@+id/tlautor04" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="30dp" -->
+<!--                     android:gravity="center"> -->
+
+<!--                     <ImageView -->
+<!--                         android:focusable="true" -->
+<!--                         android:layout_height="20dp" -->
+<!--                         android:layout_width="20dp" -->
+<!--                         android:id="@+id/legendIcon05" -->
+<!--                         android:src="@drawable/gdot" -->
+<!--                         android:layout_gravity="center"></ImageView> -->
+
+<!--                     <TextView -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:text="No Urgente" -->
+<!--                         android:layout_marginLeft="5dp" -->
+<!--                         android:layout_marginRight="50dp" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:textColor="#000000" -->
+<!--                         android:id="@+id/legendText05"></TextView> -->
+
+<!--                     <EditText -->
+<!--                         android:layout_height="20dp" -->
+<!--                         android:text="03" -->
+<!--                         android:gravity="center" -->
+<!--                         android:textAlignment="center" -->
+<!--                         android:enabled="false" -->
+<!--                         android:layout_marginLeft="25dp" -->
+<!--                         android:layout_width="50dp" -->
+<!--                         android:textColor="#000000" -->
+<!--                         android:background="#FFFFFF" -->
+<!--                         android:id="@+id/legendText06"></EditText> -->
+<!--                 </TableRow> -->
+                
+<!--               <TableRow -->
+<!--                     android:id="@+id/tlautor04" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="30dp" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:gravity="center"> -->
+
+<!--                     <ImageView -->
+<!--                         android:focusable="true" -->
+<!--                         android:layout_height="20dp" -->
+<!--                         android:layout_width="20dp" -->
+<!--                         android:id="@+id/legendIcon05" -->
+<!--                         android:src="@drawable/ydot" -->
+<!--                         android:layout_gravity="center"></ImageView> -->
+
+<!--                     <TextView -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:text="Semi Urgente" -->
+<!--                         android:layout_marginLeft="5dp" -->
+<!--                         android:layout_marginRight="50dp" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:textColor="#000000" -->
+<!--                         android:id="@+id/legendText05"></TextView> -->
+                    
+<!--                     <EditText -->
+<!--                         android:layout_height="20dp" -->
+<!--                         android:text="03" -->
+<!--                         android:gravity="center" -->
+<!--                         android:textAlignment="center" -->
+<!--                         android:enabled="false" -->
+<!--                         android:layout_marginLeft="25dp" -->
+<!--                         android:layout_width="50dp" -->
+<!--                         android:textColor="#000000" -->
+<!--                         android:background="#FFFFFF" -->
+<!--                         android:id="@+id/legendText06"></EditText> -->
+<!--                 </TableRow> -->
+                
+<!--               <TableRow -->
+<!--                     android:id="@+id/tlautor05" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="30dp" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:gravity="center"> -->
+
+<!--                     <ImageView -->
+<!--                         android:focusable="true" -->
+<!--                         android:layout_height="20dp" -->
+<!--                         android:layout_width="20dp" -->
+<!--                         android:id="@+id/legendIcon15" -->
+<!--                         android:src="@drawable/rdot" -->
+<!--                         android:layout_gravity="center"></ImageView> -->
+
+<!--                     <TextView -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:text="Urgente" -->
+<!--                         android:layout_marginLeft="5dp" -->
+<!--                         android:layout_marginRight="50dp" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:textColor="#000000" -->
+<!--                         android:id="@+id/legendText16"></TextView> -->
+                    
+<!--                     <EditText -->
+<!--                         android:layout_height="20dp" -->
+<!--                         android:text="03" -->
+<!--                         android:gravity="center" -->
+<!--                         android:textAlignment="center" -->
+<!--                         android:enabled="false" -->
+<!--                         android:layout_marginLeft="25dp" -->
+<!--                         android:layout_width="50dp" -->
+<!--                         android:textColor="#000000" -->
+<!--                         android:background="#FFFFFF" -->
+<!--                         android:id="@+id/legendText17"></EditText> -->
+<!--                 </TableRow> -->
+                
+<!--               <TableRow -->
+<!--                     android:id="@+id/tlautor06" -->
+<!--                     android:layout_width="match_parent" -->
+<!--                     android:layout_height="30dp" -->
+<!--                     android:layout_marginTop="10dp" -->
+<!--                     android:gravity="center"> -->
+
+<!--                     <ImageView -->
+<!--                         android:focusable="true" -->
+<!--                         android:layout_height="20dp" -->
+<!--                         android:layout_width="20dp" -->
+<!--                         android:id="@+id/legendIcon07" -->
+<!--                         android:src="@drawable/bdot" -->
+<!--                         android:layout_gravity="center"></ImageView> -->
+
+<!--                     <TextView -->
+<!--                         android:layout_height="wrap_content" -->
+<!--                         android:text="Fallecido" -->
+<!--                         android:layout_marginLeft="5dp" -->
+<!--                         android:layout_marginRight="50dp" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:textColor="#000000" -->
+<!--                         android:id="@+id/legendText08"></TextView> -->
+                    
+<!--                     <EditText -->
+<!--                         android:layout_height="20dp" -->
+<!--                         android:text="03" -->
+<!--                         android:gravity="center" -->
+<!--                         android:enabled="false" -->
+<!--                         android:layout_marginLeft="25dp" -->
+<!--                         android:layout_width="50dp" -->
+<!--                         android:textColor="#000000" -->
+<!--                         android:background="#FFFFFF" -->
+<!--                         android:id="@+id/legendText09"></EditText> -->
+<!--                 </TableRow> -->
+             
+                
+<!--         </TableLayout>   -->
+<!--     </LinearLayout> -->
+<!-- </LinearLayout> -->

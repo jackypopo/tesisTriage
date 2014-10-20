@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Triage Movil</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>    
+    
+    <string-array name="car_parts">
+        <item>Inicio</item>
+        <item>Triage Primario</item>
+        <item>Triage Secundario</item>
+        <item>Triage Terciario</item>
+        <item>Ingresar Historia</item>
+    </string-array>
+    
+     <string name="title_activity_app2">Triage Primario</string>
+    <string name="title_activity_app3">App3Activity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_app4">App4Activity</string>
+    <string name="title_activity_app5">App5Activity</string>
+    <string name="title_activity_app6">App6Activity</string>
+    <string name="title_activity_app7">App7Activity</string>
+    <string name="title_activity_app8">App8Activity</string>
+    <string name="title_activity_app9">Género Masculino - Vista Frontal</string>
+    <string name="title_activity_app10">Género Masculino - Vista Trasera</string>
+    <string name="activity_general_nombre">Nombre del profesional de la Salud:</string>
+    <string name="activity_general_numero_paciente">#Paciente:</string>
+    <string name="activity_genral_hora_llegada_paciente" >H. Llegada:</string>
+    <string name="activity_general_hora_de_atencion_del_paciente" >H. Atencion:</string>
+    <string name="title_activity_app11">Género Femenino - Vista Frontal</string>
+    <string name="title_activity_app12">Género Femenino - Vista Trasera</string>
+    <string name="title_activity_app13">Triage Secundario</string>
+    <string name="title_activity_app14">Triage Terciario</string>
+
+</resources>
